@@ -35,8 +35,8 @@ var devMountainGoal = null
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting(Ashton){
-  return "Hello, " + Ashton
+function greeting(name) {
+  return "Hello, " + name
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -44,8 +44,8 @@ function greeting(Ashton){
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-let newGreeting = function(Ashton){
-  return "Hello, " + Ashton
+let newGreeting = function(name) {
+  return "Hello, " + name
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -53,7 +53,7 @@ let newGreeting = function(Ashton){
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceries = ["apples", "milk", "eggs", "bread"];
+var groceries = ['apples', 'milk', 'eggs', 'bread']
 
 //////////////////PROBLEM 9////////////////////
 
@@ -63,16 +63,16 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //and goodBoy (a boolean).
 
 var dog = {
-  name: "Fido",
-  color: "Brown",
-  age: 10,
+  name: 'Daisy',
+  color: 'brown',
+  age: 12,
   goodBoy: true
-};
+}
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-var devMountainClassPet = dog.name
+var devMountainClassPet = 'Daisy'
 
 //////////////////PROBLEM 10////////////////////
 
@@ -84,14 +84,15 @@ var devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 function nameCheck(name){
-  if (name === "Steven") {
-  return "What is up Steven?"}
-  else if (name === "Bryan"){
-    return "Hey Bryan!"
-  }else {
-    return `Cool name, ${name}`
+  if(name === 'Steven') {
+    return "What is up Steven?"
   }
-  
+  if (name === 'Bryan') {
+    return "Hey Bryan!"
+  }
+    else {
+      return `Cool name, ${name}`
+    }
 }
 
 //////////////////PROBLEM 11////////////////////
@@ -107,7 +108,7 @@ function add(num1, num2){
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-var mathSum = add(3,4)
+var mathSum = add(3, 4)
 
 //////////////////PROBLEM 12////////////////////
 
@@ -119,15 +120,18 @@ var mathSum = add(3,4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color){
-if (color === 'red')
-    {return 'red is a great color'
-}else if (color === 'green'){
-  return 'green is a solid favorite color'
-}else if (color === 'black'){
-  return 'so trendy'
-}else {
-  return 'you need to evaluate your favorite color choice'
-}
+  if (color === 'red'){
+    return `red is a great color`
+  }
+  if (color === 'green'){
+    return `green is a solid favorite color`
+  }
+  if (color === 'black'){
+    return `so trendy`
+  }
+    else{
+      return `you need to evaluate your favorite color choice`
+    }
 }
 
 
@@ -159,10 +163,11 @@ let globalScope = ["duck"];
 let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["duck", "realDuck"];
+
 
 //////////////////PROBLEM 14////////////////////
 
@@ -173,8 +178,8 @@ var age = 19
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-age = 20
+var age = 20
 
 // Good news! We can live forever. Set your age to 999
 
-age = 999
+var age = 999
